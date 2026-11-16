@@ -44,7 +44,7 @@ AquaLeaf monitors and auto-corrects pool water quality and humidity balance, on 
 
 ## Project charter
 
-Full charter (target user, extra feature, feature list, team setup): link here once shared
+Full charter (target user, extra feature, feature list, team setup): [charter.pdf](docs/charter.pdf)
 
 ## Status
 
