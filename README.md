@@ -11,36 +11,27 @@ Our target user is a family or hobby grower with a small greenhouse that has a p
 
 ## Our extra feature
 
-AquaLeaf monitors and auto-corrects pool water quality and humidity balance, on top of the standard greenhouse automation - because our user's pool is part of the greenhouse, not a separate system. This includes pool pH/chlorine dosing, a pool heater, and energy/water savings tracking.
+AquaLeaf monitors and auto-corrects pool water quality and humidity balance, on top of the standard greenhouse automation - because our user's pool is part of the greenhouse, not a separate system.
 
-**Direction (track):** Resource savings - the app tracks water used by irrigation and the pool, and energy used by heating, showing the user how much was saved by automation.
+**Direction (track):** Automation & Sustainability
 
-## Core features (required)
+## Features
 
 | # | Module | How it works |
 |---|--------|--------------|
-| M1 | Authentication | Login per user; each sees only their own greenhouse |
-| M2 | Dashboard | Air temperature, air humidity, soil moisture, light level - 4 live parameters |
-| M3 | Remote control | Irrigation, ventilation, heating - 3 devices, on/off |
-| M4 | Operating modes | Manual/auto switch; e.g. "soil moisture < 30% -> water for 2 min" |
-| M5 | Notifications | Push or in-app alert when a parameter leaves its allowed range |
-| M6 | History and charts | Readings stored 7+ days; chart of 2+ parameters with a selectable period |
-| M7 | Settings | User sets thresholds, schedule and units |
-| M8 | Failure handling | Clear "no connection" state, no crash, recovers automatically |
+| M1 | Login | Separate account per user; each sees only their own greenhouse |
+| M2 | Dashboard | Air temperature, air humidity, soil moisture, pool pH - 4 live parameters |
+| M3 | Control | Irrigation, ventilation, pool heater - 3 devices, on/off |
+| M4 | Modes | Manual/auto switch; e.g. "soil moisture < 30% -> irrigation on", "pool pH out of range -> dosing on" |
+| M5 | Alerts | Push alert on leak, pump failure, or sudden temperature change |
+| M6 | History | Charts of temperature and humidity over day/week |
+| M7 | Settings | User sets thresholds for watering, heating, and pool pH range |
+| M8 | No internet | Clear "no connection" message, no crash, recovers automatically |
 
-## Signature feature details
+## Tech stack
 
-- Pool pH and chlorine sensor, with automatic dosing
-- Pool heater as an additional controllable device
-- Humidity-balance logic: vents/dehumidifiers respond to pool evaporation
-- Water and energy savings report (ties to the Resource savings track)
-
-## Architecture
-
-Three parts, as required by the brief:
-- **Greenhouse simulator** - a script that generates sensor readings and sends them to the server every 30 seconds, and accepts control commands
-- **Server** - Firebase (Realtime Database/Firestore); stores history, the app reads data and sends commands only through it
-- **Mobile app** - Flutter, one codebase for Android and iOS
+- Flutter - one codebase for Android and iOS
+- Firebase (Realtime Database/Firestore) - live data updates without extra backend code
 
 ## Team
 
@@ -53,7 +44,7 @@ Three parts, as required by the brief:
 
 ## Project charter
 
-Full charter (persona, extra feature, feature list, team setup): [charter.pdf](docs/charter.pdf)
+Full charter (target user, extra feature, feature list, team setup): link here once shared
 
 ## Status
 
