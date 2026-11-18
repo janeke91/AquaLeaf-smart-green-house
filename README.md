@@ -57,7 +57,7 @@ Full charter (persona, extra feature, feature list, team setup): [charter.pdf](d
 
 ## Week 2 - Design
 
-- **Figma prototype:** https://www.figma.com/proto/z1yE5xSrszFg7UkUt61VNv/AqueLeaf?node-id=1-2&p=f&t=Ne9ZtiAFsqOB2QXq-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1
+- **Figma prototype:** https://www.figma.com/proto/DNUMj09d0i7j06rlAEUOLO/AquaLeaf?node-id=1-413&p=f&t=ym2hLkwkUZClCqAr-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A413
 - **Architecture diagram, data structure and stack rationale:** [AquaLeaf_Week2_Architecture.pdf](docs/AquaLeaf_Week2_Architecture.pdf) ([diagram image](docs/arch.png))
 - **Stack:** Flutter (Dart) + Firebase (Firestore, Authentication, Cloud Messaging)
 - **Style:** black background, lime accent `#B6F23D`, fonts Inter and Space Grotesk; logo is a leaf floating in a pool
